@@ -1,0 +1,11 @@
+
+RewriteEngine on
+
+RewriteRule ^productos$ controllers/Lista_Productos.php
+RewriteRule ^login$ controllers/Login.php
+RewriteRule ^logout$ controllers/Logout.php
+RewriteRule ^alta-producto$ controllers/Alta_Productos.php
+RewriteRule ^alta-administrador$ controllers/Alta_Admin.php
+
+RewriteRule ^detalle-producto-([0-9]+)$ controllers/Detalle_Productos.php?Id_Producto=$1
+RewriteRule ^uploads/([0-9]+)$.([a-z]+)$ uploads/$1.$2
